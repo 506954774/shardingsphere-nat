@@ -2,38 +2,38 @@
 spring.shardingsphere.datasource.names=masterwrite0,masterwrite1,masterread0,masterread1,slaveread0,slaveread1
 
 
-spring.shardingsphere.datasource.masterwrite0.jdbc-url=jdbc:mysql://117.50.177.58:3306/readwritesplit0?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
+spring.shardingsphere.datasource.masterwrite0.jdbc-url=jdbc:mysql://127.0.0.1:3306/readwritesplit0?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
 spring.shardingsphere.datasource.masterwrite0.type=com.zaxxer.hikari.HikariDataSource
 spring.shardingsphere.datasource.masterwrite0.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.shardingsphere.datasource.masterwrite0.username=guest
 spring.shardingsphere.datasource.masterwrite0.password=123456
 
-spring.shardingsphere.datasource.masterwrite1.jdbc-url=jdbc:mysql://117.50.177.58:3306/readwritesplit1?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
+spring.shardingsphere.datasource.masterwrite1.jdbc-url=jdbc:mysql://127.0.0.1:3306/readwritesplit1?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
 spring.shardingsphere.datasource.masterwrite1.type=com.zaxxer.hikari.HikariDataSource
 spring.shardingsphere.datasource.masterwrite1.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.shardingsphere.datasource.masterwrite1.username=guest
 spring.shardingsphere.datasource.masterwrite1.password=123456
 
 
-spring.shardingsphere.datasource.masterread0.jdbc-url=jdbc:mysql://117.50.177.58:3306/readwritesplit0?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
+spring.shardingsphere.datasource.masterread0.jdbc-url=jdbc:mysql://127.0.0.1:3306/readwritesplit0?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
 spring.shardingsphere.datasource.masterread0.type=com.zaxxer.hikari.HikariDataSource
 spring.shardingsphere.datasource.masterread0.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.shardingsphere.datasource.masterread0.username=guest
 spring.shardingsphere.datasource.masterread0.password=123456
 
-spring.shardingsphere.datasource.masterread1.jdbc-url=jdbc:mysql://117.50.177.58:3306/readwritesplit1?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
+spring.shardingsphere.datasource.masterread1.jdbc-url=jdbc:mysql://127.0.0.1:3306/readwritesplit1?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
 spring.shardingsphere.datasource.masterread1.type=com.zaxxer.hikari.HikariDataSource
 spring.shardingsphere.datasource.masterread1.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.shardingsphere.datasource.masterread1.username=guest
 spring.shardingsphere.datasource.masterread1.password=123456
 
-spring.shardingsphere.datasource.slaveread0.jdbc-url=jdbc:mysql://117.50.177.58:3307/readwritesplit0?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
+spring.shardingsphere.datasource.slaveread0.jdbc-url=jdbc:mysql://127.0.0.1:3307/readwritesplit0?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
 spring.shardingsphere.datasource.slaveread0.type=com.zaxxer.hikari.HikariDataSource
 spring.shardingsphere.datasource.slaveread0.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.shardingsphere.datasource.slaveread0.username=guest
 spring.shardingsphere.datasource.slaveread0.password=123456
 
-spring.shardingsphere.datasource.slaveread1.jdbc-url=jdbc:mysql://117.50.177.58:3307/readwritesplit1?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
+spring.shardingsphere.datasource.slaveread1.jdbc-url=jdbc:mysql://127.0.0.1:3307/readwritesplit1?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
 spring.shardingsphere.datasource.slaveread1.type=com.zaxxer.hikari.HikariDataSource
 spring.shardingsphere.datasource.slaveread1.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.shardingsphere.datasource.slaveread1.username=guest
@@ -42,26 +42,26 @@ spring.shardingsphere.datasource.slaveread1.password=123456
 spring.shardingsphere.sharding.binding-tables=tb_keyvalue
 spring.shardingsphere.props.sql.show=true
 
-#¶ÁĞ´·ÖÀëÅäÖÃ¿â1
+#ï¿½ï¿½Ğ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½1
 spring.shardingsphere.sharding.master-slave-rules.ds0.name=ds0datasource
 spring.shardingsphere.sharding.master-slave-rules.ds0.load-balance-algorithm-type=round_robin
 spring.shardingsphere.sharding.master-slave-rules.ds0.master-data-source-name=masterwrite0
 spring.shardingsphere.sharding.master-slave-rules.ds0.slave-data-source-names=masterread0,slaveread0
 
-#¶ÁĞ´·ÖÀëÅäÖÃ¿â2
+#ï¿½ï¿½Ğ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½2
 spring.shardingsphere.sharding.master-slave-rules.ds1.name=ds1datasource
 spring.shardingsphere.sharding.master-slave-rules.ds1.load-balance-algorithm-type=round_robin
 spring.shardingsphere.sharding.master-slave-rules.ds1.master-data-source-name=masterwrite1
 spring.shardingsphere.sharding.master-slave-rules.ds1.slave-data-source-names=masterread1, slaveread1
 
-########################Ö÷¼üÉú³É²ßÂÔ
+########################ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É²ï¿½ï¿½ï¿½
 spring.shardingsphere.sharding.tables.tb_keyvalue.key-generator.column=id
 #spring.shardingsphere.sharding.tables.tb_keyvalue.key-generator.type=SNOWFLAKE
 spring.shardingsphere.sharding.tables.tb_keyvalue.key-generator.type=NanoTimeShardingKeyGenerator
 
 
-####################################################±ê×¼·ÖÆ¬²ßÂÔ########################################################
-#±ê×¼·ÖÆ¬²ßÂÔ
+####################################################ï¿½ï¿½×¼ï¿½ï¿½Æ¬ï¿½ï¿½ï¿½ï¿½########################################################
+#ï¿½ï¿½×¼ï¿½ï¿½Æ¬ï¿½ï¿½ï¿½ï¿½
 spring.shardingsphere.sharding.tables.tb_keyvalue.actual-data-nodes=ds$->{0..1}.tb_keyvalue_$->{0..2}
 spring.shardingsphere.sharding.tables.tb_keyvalue.database-strategy.standard.precise-algorithm-class-name=com.jisen.rws.common.MyDBPreciseShardingAlgorithm
 spring.shardingsphere.sharding.tables.tb_keyvalue.database-strategy.standard.range-algorithm-class-name=com.jisen.rws.common.MyDBRangeShardingAlgorithm
@@ -72,8 +72,8 @@ spring.shardingsphere.sharding.tables.tb_keyvalue.table-strategy.standard.range-
 spring.shardingsphere.sharding.tables.tb_keyvalue.table-strategy.standard.sharding-column=id
 
 
-#ĞĞ·ÖÆ¬²ßÂÔ£¬Ö»ÄÜÖ§³Ö = »òÕß in() µÄ¾«×¼²éÑ¯£¬²»Ö§³Ö·¶Î§²éÑ¯
-###################################################ÒÔÏÂÎªĞĞ·ÖÆ¬²ßÂÔ############################################
+#ï¿½Ğ·ï¿½Æ¬ï¿½ï¿½ï¿½Ô£ï¿½Ö»ï¿½ï¿½Ö§ï¿½ï¿½ = ï¿½ï¿½ï¿½ï¿½ in() ï¿½Ä¾ï¿½×¼ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½Ö§ï¿½Ö·ï¿½Î§ï¿½ï¿½Ñ¯
+###################################################ï¿½ï¿½ï¿½ï¿½Îªï¿½Ğ·ï¿½Æ¬ï¿½ï¿½ï¿½ï¿½############################################
 #spring.shardingsphere.sharding.tables.tb_keyvalue.actual-data-nodes=ds$->{0..1}.tb_keyvalue_$->{0..2}
 #
 #spring.shardingsphere.sharding.tables.tb_keyvalue.database-strategy.inline.sharding-column=id
