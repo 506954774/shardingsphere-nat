@@ -10,10 +10,10 @@ import java.util.Collection;
  * @author jisen
  * @date 2021/7/27 15:29
  */
-public class MyDBRangeShardingAlgorithm implements RangeShardingAlgorithm<Long> {
+public class MyDBRangeShardingAlgorithm implements RangeShardingAlgorithm<String> {
 
     @Override
-    public Collection<String> doSharding(Collection<String> collection, RangeShardingValue<Long> rangeShardingValue) {
+    public Collection<String> doSharding(Collection<String> collection, RangeShardingValue<String> rangeShardingValue) {
         return collection;
 
     }

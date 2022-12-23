@@ -9,12 +9,14 @@ import java.util.Collection;
  * @author jisen
  * @date 2021/7/27 16:44
  */
-public class MyTablePreciseShardingAlgorithm implements PreciseShardingAlgorithm<Long> {
+public class MyTablePreciseShardingAlgorithm implements PreciseShardingAlgorithm<String> {
 
     @Override
-    public String doSharding(Collection<String> availableTargetNames, PreciseShardingValue<Long> shardingValue) {
+    public String doSharding(Collection<String> availableTargetNames, PreciseShardingValue<String> shardingValue) {
         for (String tableName : availableTargetNames) {
-            if (tableName.endsWith(shardingValue.getValue() % 3 + "")) {
+            //日期的最后一位，对5取模
+            Integer date=Integer.parseInt(shardingValue.getValue().substring(shardingValue.getValue().length()-1));
+            if (tableName.endsWith(date % 5 + "")) {
                 return tableName;
             }
         }

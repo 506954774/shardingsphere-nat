@@ -5,18 +5,25 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import java.util.Date;
+
 /**
  * @author jisen
  * @date 2021/7/27 11:58
  */
 @Data
-@TableName("tb_keyvalue")
-public class KeyValueEntity {
-    /**
-     * 用户id
-     */
-    @TableId
+@TableName("tb_nat_")
+public class NatEntity {
+
+    @TableId(type=IdType.INPUT)
     private Long id;
-    private String fldKey;
-    private String fldValue;
+
+    private String idCardCode;
+    private String samplingDate;
+
+    private Date samplingTime;
+    private Date resultTime;
+    private String result;
+
+
 }
