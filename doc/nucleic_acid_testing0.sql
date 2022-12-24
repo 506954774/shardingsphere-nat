@@ -2,6 +2,7 @@
 DROP TABLE IF EXISTS `tb_nat_0`;
 CREATE TABLE `tb_nat_0` (
                             `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
+                            `test_tube_id` bigint(20) DEFAULT NULL  COMMENT '采样试管id',
                             `id_card_code` varchar(255) DEFAULT NULL COMMENT '身份证号码',
                             `sampling_date` varchar(20) DEFAULT NULL COMMENT '采样日期',
                             `sampling_time` datetime DEFAULT NULL COMMENT '采样时间',
@@ -16,6 +17,7 @@ CREATE TABLE `tb_nat_0` (
 DROP TABLE IF EXISTS `tb_nat_1`;
 CREATE TABLE `tb_nat_1` (
                             `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
+                            `test_tube_id` bigint(20) DEFAULT NULL  COMMENT '采样试管id',
                             `id_card_code` varchar(255) DEFAULT NULL COMMENT '身份证号码',
                             `sampling_date` varchar(20) DEFAULT NULL COMMENT '采样日期',
                             `sampling_time` datetime DEFAULT NULL COMMENT '采样时间',
@@ -30,6 +32,7 @@ CREATE TABLE `tb_nat_1` (
 DROP TABLE IF EXISTS `tb_nat_2`;
 CREATE TABLE `tb_nat_2` (
                             `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
+                            `test_tube_id` bigint(20) DEFAULT NULL  COMMENT '采样试管id',
                             `id_card_code` varchar(255) DEFAULT NULL COMMENT '身份证号码',
                             `sampling_date` varchar(20) DEFAULT NULL COMMENT '采样日期',
                             `sampling_time` datetime DEFAULT NULL COMMENT '采样时间',
@@ -44,6 +47,7 @@ CREATE TABLE `tb_nat_2` (
 DROP TABLE IF EXISTS `tb_nat_3`;
 CREATE TABLE `tb_nat_3` (
                             `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
+                            `test_tube_id` bigint(20) DEFAULT NULL  COMMENT '采样试管id',
                             `id_card_code` varchar(255) DEFAULT NULL COMMENT '身份证号码',
                             `sampling_date` varchar(20) DEFAULT NULL COMMENT '采样日期',
                             `sampling_time` datetime DEFAULT NULL COMMENT '采样时间',
@@ -58,6 +62,7 @@ CREATE TABLE `tb_nat_3` (
 DROP TABLE IF EXISTS `tb_nat_4`;
 CREATE TABLE `tb_nat_4` (
                             `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
+                            `test_tube_id` bigint(20) DEFAULT NULL  COMMENT '采样试管id',
                             `id_card_code` varchar(255) DEFAULT NULL COMMENT '身份证号码',
                             `sampling_date` varchar(20) DEFAULT NULL COMMENT '采样日期',
                             `sampling_time` datetime DEFAULT NULL COMMENT '采样时间',

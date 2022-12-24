@@ -1,4 +1,4 @@
-package com.jisen.rws.entity;
+package com.jisen.rws.entity.qo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -12,20 +12,16 @@ import java.util.Date;
  * @date 2021/7/27 11:58
  */
 @Data
-@TableName("tb_nat_")
-public class NatEntity {
+public class NatInsertQo {
 
-    @TableId(type=IdType.INPUT)
-    private Long id;
-
-    private String idCardCode;
+    //采样日期
     private String samplingDate;
-
-    private Date samplingTime;
-    private Date resultTime;
-    private String result;
     //试管id
     private Long testTubeId;
+    //核酸采样者的身份证号码
+    private String idCardCode;
+
+
 
 
 }
